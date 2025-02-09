@@ -1,0 +1,9 @@
+- name: Apply DISA STIG Compliance
+  hosts: k3s_cluster
+  become: true
+  tasks:
+    - name: Ensure firewalld is enabled
+      ansible.builtin.systemd:
+        name: firewalld
+        enabled: yes
+        state: started
