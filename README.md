@@ -1,2 +1,0 @@
-# agilearmory
-k3s-
